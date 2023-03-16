@@ -960,17 +960,6 @@ window.onload = function () {
     community.classList.remove("active");
   });
 
-  // niceScroll 적용
-  // const sgl = $(".season-good-list");
-  // sgl.niceScroll({
-  //   cursorwidth: "8px",
-  //   cursoropacitymax: 0.5,
-  // });
-
-  // sgl.mouseover(function () {
-  //   sgl.getNiceScroll().resize();
-  // });
-
   // 전체 메뉴 펼침 기능
   const allMenuArea = document.querySelector(".all-menu-area");
   const allMenu = document.querySelector(".all-menu");
