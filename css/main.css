@@ -86,7 +86,7 @@ body {
 .fix-shop::after {
   background-position: 0 -32px !important;
 }
-.good-resent {
+.good-recent {
   position: relative;
   display: inline-block !important;
   width: 50px !important;
@@ -94,10 +94,10 @@ body {
   overflow: hidden;
 }
 /* 뒷편 아이콘 없애기(투명이미지일때 아이콘이 보이기때문에 none) */
-.good-resent::after {
+.good-recent::after {
   content: none !important;
 }
-.good-resent img {
+.good-recent img {
   position: absolute;
   left: 50%;
   top: 50%;
