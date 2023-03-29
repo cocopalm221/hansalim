@@ -1,4 +1,26 @@
 window.onload = function () {
+  //modal
+  let body = document.querySelector("body");
+  let modal = document.querySelector(".modal");
+  modal.addEventListener("click", function () {
+    // modal.style.display = "none";
+    // body.classList.add("active");
+    // fadeOut(modal);
+    anime({
+      targets: ".modal",
+      delay: 200,
+      duration: 500,
+      opacity: 0,
+      easing: "linear",
+      complete: function () {
+        // alert("gogo");
+        modal.style.display = "none";
+        body.classList.add("acctive");
+      },
+    });
+    body.classList.add("active");
+  });
+
   function priceToString(price) {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
